@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>100-Page Graphic Novel Flipbook</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation controls (Previous, Page Number, Next) -->
+  <div class="nav-controls">
+    <button id="prevPage">⟵ Prev</button>
+    <span id="pageCounter">Page 1 of 100</span>
+    <button id="nextPage">Next ⟶</button>
+  </div>
+
+  <!-- Book container where pages will be injected -->
+  <div class="book" id="book"></div>
+
+  <!-- Control panel: download and change background -->
+  <div class="controls">
+    <button id="downloadPageBtn">Download Page</button>
+    <input type="file" id="changeBackgroundInput" accept="image/*" />
+    <label for="changeBackgroundInput">Change Background</label>
+  </div>
+
+  <!-- Screenshot library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- Main JavaScript logic -->
+  <script src="script.js"></script>
+</body>
+</html>
